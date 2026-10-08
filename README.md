@@ -7,7 +7,7 @@
 
 A Vault module for [Testcontainers for .NET](https://dotnet.testcontainers.org). Start a real [HashiCorp Vault](https://developer.hashicorp.com/vault) or [OpenBao](https://openbao.org) server from your .NET tests with one builder call. The container is ready when `StartAsync` returns, the root token is known, and the secrets, engines and policies your test needs are already there.
 
-Testcontainers has a Vault module for Java and Go. This package brings the same to .NET. A dry dock is where a ship is checked before it sails, hence the name.
+Testcontainers has a Vault module for Java, Go, Node.js and Python. This package brings the same to .NET. A dry dock is where a ship is checked before it sails, hence the name.
 
 ```csharp
 await using var vault = new VaultBuilder("hashicorp/vault:2.1")
