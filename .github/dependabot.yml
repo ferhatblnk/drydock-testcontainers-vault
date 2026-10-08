@@ -6,6 +6,8 @@ updates:
       interval: weekly
     ignore:
       - dependency-name: Testcontainers
+      - dependency-name: "xunit.*"
+        update-types: ["version-update:semver-major"]
     groups:
       nuget:
         patterns: ["*"]
