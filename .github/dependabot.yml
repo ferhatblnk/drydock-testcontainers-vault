@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: nuget
+    directory: "/"
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: Testcontainers
+    groups:
+      nuget:
+        patterns: ["*"]
+
+  - package-ecosystem: docker
+    directory: "/tests/Drydock.Testcontainers.Vault.Tests"
+    schedule:
+      interval: weekly
+    groups:
+      images:
+        patterns: ["*"]
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]

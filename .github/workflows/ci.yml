@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test (Testcontainers ${{ matrix.core.name }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        core:
+          - name: lowest supported
+            arguments: ""
+          - name: newest 4.x
+            arguments: "-p:TestcontainersTestVersion=4.*"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            9.0.x
+          global-json-file: global.json
+
+      - name: Build
+        run: dotnet build --configuration Release ${{ matrix.core.arguments }}
+
+      - name: Test
+        run: dotnet test --configuration Release --no-build ${{ matrix.core.arguments }}
+
+  pack:
+    name: Pack
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Pack
+        run: dotnet pack src/Drydock.Testcontainers.Vault --configuration Release --output artifacts
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: package
+          path: artifacts/*
