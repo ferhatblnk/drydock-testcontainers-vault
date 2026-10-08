@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Drydock">
+  <rect width="512" height="512" rx="96" fill="#0E2F44"/>
+  <path d="M64 124h52v112h32v108h216V236h32V124h52v272H64z" fill="#E6EDF2"/>
+  <rect x="192" y="322" width="36" height="22" fill="#8FA3B0"/>
+  <rect x="284" y="322" width="36" height="22" fill="#8FA3B0"/>
+  <rect x="172" y="184" width="168" height="138" rx="8" fill="#F2882B"/>
+  <g fill="#C9661A">
+    <rect x="196" y="202" width="10" height="102" rx="5"/>
+    <rect x="224" y="202" width="10" height="102" rx="5"/>
+    <rect x="251" y="202" width="10" height="102" rx="5"/>
+    <rect x="278" y="202" width="10" height="102" rx="5"/>
+    <rect x="306" y="202" width="10" height="102" rx="5"/>
+  </g>
+</svg>

@@ -15,6 +15,7 @@
     <PackageTags>testcontainers;vault;hashicorp-vault;openbao;secrets;docker;integration-testing;testing</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/ferhatblnk/drydock-testcontainers-vault</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ferhatblnk/drydock-testcontainers-vault</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -32,6 +33,7 @@
   <ItemGroup>
     <InternalsVisibleTo Include="Drydock.Testcontainers.Vault.Tests" />
     <None Include="../../README.md" Pack="true" PackagePath="/" Visible="false" />
+    <None Include="../../assets/icon.png" Pack="true" PackagePath="/" Visible="false" />
   </ItemGroup>
 
 </Project>

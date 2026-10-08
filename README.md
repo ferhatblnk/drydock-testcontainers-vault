@@ -1,5 +1,7 @@
 # Drydock.Testcontainers.Vault
 
+![Drydock](https://raw.githubusercontent.com/ferhatblnk/drydock-testcontainers-vault/main/assets/icon.png)
+
 [![CI](https://github.com/ferhatblnk/drydock-testcontainers-vault/actions/workflows/ci.yml/badge.svg)](https://github.com/ferhatblnk/drydock-testcontainers-vault/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/Drydock.Testcontainers.Vault.svg)](https://www.nuget.org/packages/Drydock.Testcontainers.Vault)
 
