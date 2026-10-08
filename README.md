@@ -212,6 +212,10 @@ To run the suite against another Testcontainers version:
 dotnet test -p:TestcontainersTestVersion=4.*
 ```
 
+## Background
+
+The story behind the module, and what building it taught me about Testcontainers, is in this article: [Your code reads secrets from Vault. What do you test it against?](https://medium.com/@ferhatblnk/your-code-reads-secrets-from-vault-what-do-you-test-it-against-349fbe78c2e0)
+
 ## Contributing
 
 Issues and pull requests are welcome. For anything larger than a fix, please open an issue first so we can agree on the approach. [CONTRIBUTING.md](https://github.com/ferhatblnk/drydock-testcontainers-vault/blob/main/CONTRIBUTING.md) has the short list of rules.
