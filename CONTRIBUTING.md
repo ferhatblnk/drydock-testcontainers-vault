@@ -21,6 +21,10 @@ Docker must be running. The suite starts real Vault and OpenBao containers and t
 - `dotnet format --verify-no-changes` must pass, and the build must stay free of warnings.
 - Do not bind to more of the Testcontainers API than needed. The module is compiled once and has to keep working when the core is updated; `ContainerConfigurationSeed` exists for that reason.
 
+## License of contributions
+
+By opening a pull request you agree that your contribution is licensed under the [MIT license](LICENSE) of this project, and you confirm that you have the right to submit it. Do not copy code from another project unless its license allows it, and say where it comes from.
+
 ## Checking another Testcontainers version
 
 ```shell

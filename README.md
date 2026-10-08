@@ -218,11 +218,17 @@ Issues and pull requests are welcome. For anything larger than a fix, please ope
 
 This module was developed with an AI coding assistant (Claude). The behaviour described in this README is covered by tests that run against real Vault and OpenBao containers. Contributions written with AI tools are welcome on the same terms: they come with tests.
 
-## Not affiliated
+## Trademarks and third-party software
 
-This is a community project. It is not affiliated with or endorsed by HashiCorp, IBM, the OpenBao project, Docker or the Testcontainers maintainers. All product names are trademarks of their owners.
+Drydock.Testcontainers.Vault is an independent community project. It is not affiliated with, sponsored by or endorsed by HashiCorp, IBM, the OpenBao project, Docker or the maintainers of Testcontainers.
 
-The package does not contain or redistribute Vault or OpenBao. It starts the image you name, under that image's own license.
+HashiCorp and Vault are trademarks of HashiCorp, Inc. Docker, Testcontainers and OpenBao are trademarks of their respective owners. These names appear here only to say what the module works with. The project uses none of their logos; the icon is an original drawing.
+
+The package contains only its own code:
+
+- It does not contain or redistribute Vault or OpenBao. It starts the image you name, and that image comes under its own license: the Business Source License for HashiCorp Vault, MPL-2.0 for OpenBao.
+- [Testcontainers for .NET](https://github.com/testcontainers/testcontainers-dotnet) (MIT) is a NuGet dependency, not a bundled copy. The builder follows that project's module conventions.
+- VaultSharp and xUnit are used by the tests only and are not part of the package.
 
 ## License
 
