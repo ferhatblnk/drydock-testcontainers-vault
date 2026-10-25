@@ -5,6 +5,9 @@
 [![CI](https://github.com/ferhatblnk/drydock-testcontainers-vault/actions/workflows/ci.yml/badge.svg)](https://github.com/ferhatblnk/drydock-testcontainers-vault/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/Drydock.Testcontainers.Vault.svg)](https://www.nuget.org/packages/Drydock.Testcontainers.Vault)
 
+> [!NOTE]
+> An official Vault module for .NET has been merged into Testcontainers for .NET ([testcontainers/testcontainers-dotnet#1801](https://github.com/testcontainers/testcontainers-dotnet/pull/1801)), contributed from this package. It will ship as `Testcontainers.Vault` with the next Testcontainers for .NET release. Until then, keep using this package. Once the official package is published, this README will explain how to move to it.
+
 A Vault module for [Testcontainers for .NET](https://dotnet.testcontainers.org). Start a real [HashiCorp Vault](https://developer.hashicorp.com/vault) or [OpenBao](https://openbao.org) server from your .NET tests with one builder call. The container is ready when `StartAsync` returns, the root token is known, and the secrets, engines and policies your test needs are already there.
 
 Testcontainers has a Vault module for Java, Go, Node.js and Python. This package brings the same to .NET. A dry dock is where a ship is checked before it sails, hence the name.
